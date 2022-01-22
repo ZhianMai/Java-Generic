@@ -28,5 +28,11 @@ public class DataOutput {
     dataList.add(null);
     dataList = strList;
     printData(dataList);
+
+    // Any generic types of ArrayList can assign to Wildcard decoration variable
+    dataList = new ArrayList<Integer>();
+    // Cannot add elements
+    // dataList.add(1);
+    dataList = new ArrayList<String>();
   }
 }
