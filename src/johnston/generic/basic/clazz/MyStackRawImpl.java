@@ -3,6 +3,8 @@ package johnston.generic.basic.clazz;
 import java.lang.reflect.Array;
 
 public class MyStackRawImpl<E> implements MyStack<E> {
+  // Cannot do this:
+  // private E[] array = new E[2];
   private E[] array;
   private int cap = 2;
   private int size = 0;
@@ -10,6 +12,7 @@ public class MyStackRawImpl<E> implements MyStack<E> {
 
   public MyStackRawImpl(Class<E> clazz) {
     this.clazz = clazz;
+    // Using Java reflection
     array = (E[]) Array.newInstance(clazz, cap);
   }
 

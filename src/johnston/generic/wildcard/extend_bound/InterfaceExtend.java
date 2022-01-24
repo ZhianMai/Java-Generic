@@ -21,5 +21,11 @@ public class InterfaceExtend {
     strList.add("b");
     strList.add("c");
     printData(strList);
+
+    throwExc();
+  }
+
+  private static void throwExc() {
+    throw new RuntimeException("I just throw, don't ask why");
   }
 }

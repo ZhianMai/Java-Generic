@@ -20,7 +20,10 @@ public class BasicExtend {
 
   // Wildcard is like anonymous class which declares and init only once.
   public static void drawHelper(List<? extends Shape> list) {
+    // Tell the compiler that the elements in the list extends Shape, so
+    // they can use .draw()
     list.get(0).draw();
+    // list.add(null);
   }
 
   public static void main(String[] args) {

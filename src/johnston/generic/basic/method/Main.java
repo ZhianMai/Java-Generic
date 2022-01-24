@@ -29,5 +29,10 @@ public class Main implements Comparable {
     System.out.println("\nBefore swapping int[][]: " + intArray[0][0] + "-" + intArray[1][0]);
     SwapUtil.arraySwap(intArray, 0, 1);
     System.out.println("After swapping int[][]: " + intArray[0][0] + "-" + intArray[1][0]);
+
+    Integer[] intArr = new Integer[2];
+    intArr[0]  = 1;
+    intArr[1] = 2;
+    SwapUtil.arraySwap(intArr, 0, 1);
   }
 }
